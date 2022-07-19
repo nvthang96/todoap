@@ -5,30 +5,64 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="Todo.css">
+    <link rel="stylesheet" href="./css/all.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <title>Document</title>
     
 </head>
 <body>
+    
     <div class="todo">
+        
         <h3 class="todo-title">TODO</h1>
         <div class="search">
             <div class="gr-search">
                 <input type="text" class="input-search"/>
-                <label>+</label>
+     
             </div>
+           
             
         </div>
-        
+        <div><button onclick="CreatePersion()" class="Create">Create+</button></div>
         <div class="todo-list">
+            
             <div class="todo-info">
                 <ul class="info-persion">
-        
+                    
                 </ul>
+              
             </div>
         </div>
         
     </div>
-    
+    <div id="task" class="todo-task-create">
+        <h3 class="title">Create Persion</h3>
+        <div class="content">
+            <div class="form-group">
+                <label>Persion Code</label>
+                <input id="inputCode"   type="text">
+            </div>
+            <div class="form-group">
+                <label>Persion Name</label>
+                <input id="inputName" type="text">
+            </div>
+            <div class="form-group">
+                <label>Persion Brithday</label>
+                <input id="inputBrithday" type="text">
+            </div>
+            <div class="form-group">
+                <label>Persion Gender</label>
+                <input id="inputGender" type="text">
+            </div>
+            <div class="form-group">
+                <label>Persion Address</label>
+                <input id="inputAddress" type="text">
+            </div>
+            <div class="btnS">
+            <button onclick="createSave()" class="btn-Save">Save</button></div>
+            
+        </div>
+       </div>
 </body>
 <script src="Todo.js"></script>
 </html>

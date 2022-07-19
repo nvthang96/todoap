@@ -5,14 +5,16 @@
 body{
     display: flex;
     justify-content: center;
-    align-items:center ;
-  
+   
+    
 }
 .todo{
-    width: 40%;
-    max-height: 60%;
+    width: 25%;
+    max-height: 50%;
     background-color: bisque;
-    border: 1px solid brown;
+    border: 3px solid brown;
+    border-radius: 8px;
+
 }
 .todo-title{
     font-size: 30px;
@@ -23,7 +25,7 @@ body{
     width: 100%;
     display: flex;
     justify-content: center;
-    
+   
 }
 .gr-search{
     display: flex;
@@ -31,6 +33,16 @@ body{
     justify-content: center;
     margin-bottom: 10px;
 }
+.input-search{
+    border: none;
+    border-radius: 9px;
+}
+.input-search:hover{
+
+    border: 1px solid black;
+    height: 20px;
+}
+
 label{
     margin: auto 0px;
 }
@@ -42,8 +54,8 @@ input{
 .todo-list{
     width: 95%;
     display: flex;
-    max-height: 500px;
-    
+    max-height: 400px;
+    min-height: 300px;
 }
 
 .info-persion{
@@ -52,10 +64,96 @@ input{
     margin:10px auto 5px 25px;
     border-bottom: 1px solid gray;
     display: flex;
-    justify-content: space-between;
+    flex-direction: column;
 }
 .todo-info{
 
-    overflow: scroll;
+    overflow-y: auto;
     flex: 1;
+    max-height: 500px;
+    margin-top: 10px;
+}
+.btn{
+    float: right;
+    width: 20%;
+    margin-right: 5px;
+    border: none;
+    min-height: 20px;
+    border-radius: 9px;
+}
+.btn.delete{
+    background-color: red;
+    cursor: pointer;
+}
+.btn.edit{
+    background-color: rgb(255, 238, 0);
+    cursor: pointer;
+}
+.Create {
+    width: 25%;
+    height: 30px;
+    margin-left: 20px;
+    border: none;
+    background-color: rgb(0, 255, 157);
+    border-radius:8px;
+    cursor: pointer;
+}
+.todo-task-create{
+    width: 20%;
+    min-width: 200px;
+    background: rgb(2,0,36);
+    background: linear-gradient(90deg, rgba(2,0,36,1) 0%, rgba(121,9,88,1) 35%, rgba(0,212,255,1) 100%);
+    margin-left: 10px;
+    color: white;
+    border-radius: 8px;
+    border: 1px solid;
+    padding: 10px;
+    box-shadow: 5px 5px rgb(99, 98, 98);
+    display: none;
+    max-height: 400px;
+}
+.title{
+    font-size: 30px;
+    text-align: center;
+    margin: 20px auto 20px auto;
+}
+.content{
+    width: 100%;
+
+
+}
+.form-group{
+    width: 80%;
+    margin: 5px auto;
+}
+.form-group input{
+    width: 100%;
+}
+
+.btnS{
+    width: 100%;
+   display: flex;
+   justify-content: center;
+}
+.btn-Save{
+    width: 50%;
+    margin: 5px auto;
+    min-height: 30px;
+    border: none;
+
+    background: linear-gradient(90deg, rgba(2,0,36,1) 0%, rgba(121,9,88,1) 45%, rgba(0,212,255,1) 100%);
+    border-radius: 8px;
+    color: white;
+    font-size: 20px;
+    border: 1px solid white;
+    cursor: pointer;
+}
+
+.input-NameEdit{
+    width: 70%;
+    margin: 10px;
+}
+.input-GenderEdit{
+    width: 70%;
+    margin: 1px;
 }
